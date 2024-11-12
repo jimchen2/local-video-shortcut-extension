@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Local Video Player Enhancement",
+  "version": "1.0",
+  "description": "Basic shortcuts for local video files",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["file://*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
